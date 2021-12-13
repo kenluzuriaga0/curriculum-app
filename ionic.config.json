@@ -1,0 +1,7 @@
+{
+  "name": "CurriculumApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
