@@ -10,7 +10,7 @@ export class MenuComponent implements OnInit {
     { title: 'Información', url: '/info', icon: 'pencil' },
     { title: 'Experiencia', url: '/experiencia', icon: 'paper-plane' },
     { title: 'Educación', url: '/educacion', icon: 'archive' },
-    { title: 'Habilidades', url: '/habilidades', icon: 'heart' },
+    { title: 'Habilidades', url: '/skills', icon: 'heart' },
   ];
   public referencias = [
     { nombre: 'Gustavo Cires', correo: 'gcires@gmail.com', celular: '+593 99 022 6189' },

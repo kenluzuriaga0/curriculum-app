@@ -1,9 +1,30 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>educacion</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button ></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Educacion</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title id="container" size="large">Educación</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div style="height: 5%;"></div>
 
+  <ion-list id="labels-list">
+    <ion-item *ngFor="let educa of educacion" lines="none">
+      <ion-label class="angular-with-newlines">
+        <h2><strong>{{ educa.nombre }}</strong> </h2>
+        <strong>{{ educa.periodo }}</strong>
+        <h3>{{ educa.titulo }}</h3>
+        <h3>{{ educa.tipo }}</h3>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  
 </ion-content>
